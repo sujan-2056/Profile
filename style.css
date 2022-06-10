@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    position: relative;
+}
+
+
+/* ---------navigation bar-----------     */
+
+
+#header .navigation{
+    /* position: absolute; */
+    color: black;
+    /* background-color: rgba(128, 255, 0, 0.329); */
+    width: 100%;
+    text-align: right;
+    z-index: 999;    
+
+    position: fixed;
+    position:-webkit-sticky;
+    top: 0px;
+    bottom: 0px;
+}
+.navigation ul{
+   
+    list-style-type: none;
+    background-color: rgb(101, 184, 112);
+}
+.navigation ul li{
+    display: inline-block;
+    margin: 20px 10px;
+
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: all o.9s ease;
+}
+
+.navigation ul li a:hover{
+    /* background-color: violet; */
+    padding: 5px;
+    border-bottom: 2px solid white;
+   
+}
+
+
+
+/* ------------head section-------------  */
+
+
+.left{
+    width: 40%;
+    float: left;
+    height: 500px;
+    /* border: 1px solid rgb(238, 7, 7); */
+}
+.right{
+    width: 60%;
+    float: right;
+    height: 500px;
+    /* border: 1px solid black; */
+    background-color:  rgb(19, 18, 18);
+    color: #697D8E;
+}
+.right p{
+    font-size: 200%;
+}
+.image{
+    margin-top: 140px;
+    position: absolute;
+    margin-left: 31%;
+}
+.image img{
+    border-radius: 50%;
+    width: 25%;
+}
+
+.textDeco{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 60%;
+    color: grey;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+
+
+
+
+
+
+/* #header{
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/pexels-suzy-hazelwood-1629236.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+.box-1{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+.box-1 img{
+    width:250px;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}
+.box-1 h1{
+    color: white;
+    font-size: 50px;
+    margin: 5px 0px;
+
+}
+.box-1 p{
+    color: white;
+}
+
+
+        /* ---------------------------
+                skillset
+        ----------------------------- */
+
+
+
+.skillset{
+    color: #697D8E;
+    width: 100%;
+    content: "";
+    display: table;
+    clear: both;
+            /* border: 2px solid rgb(241, 11, 11); */
+}
+.col-1-of-3{
+    float: left;
+    width: 33.25%;
+    /* height: 450px; */
+    text-align: justify;
+    padding: 30px;
+          /* border: 1px solid black; */
+
+ 
+}
+.product, .web, .Illustrator, .Videography{
+    padding-top: 40px;
+    padding-right: 50px;
+      /* border: 1px solid black; */
+} 
+
+/* .col-1-of-3:hover{
+    background-color: rgb(202, 202, 202);
+} */
+
+
+.col-1-of-3 h2{
+    font-size: 200%;
+    margin-top: 70px;
+    /* border: 1px solid black; */
+}
+
+
+        /* ---------------------------
+               My Dribble
+        ----------------------------- */
+
+
+.dribble{
+    display: grid;
+    /* grid-template-columns: auto; */
+    grid-gap: 40px;
+    grid-template-rows: auto auto;
+    align-content: space-around;
+    background-color: rgb(19, 18, 18);
+    padding: 50px 130px;
+
+}
+/* .dribble div{
+    text-align: center;
+} */
+.grid{
+    margin-top: 10px;
+    position: relative;
+}
+
+.abslt{
+   /* margin: 10px 0px 5px 300px;  */
+   color:#a7b1b9;
+}
+.abslt h2{
+    font-size: 300%;
+    margin-bottom: 10px;
+}
+
+.abslt a{
+
+
+
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-variant: small-caps;
+    background-color: cornflowerblue;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.5s;
+
+}
+.abslt a:hover{
+    font-size: 17px;
+    box-shadow: 5px 5px 4px ;
+}
+
+ /* ---------------------------
+        youtube and aeroplane
+ ----------------------------- */
+
+
+.row{
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+.youtube, .aeroplane{
+    float: left;
+    width: 50%;
+}
+
+.youtube{
+    padding: 5% 5% 5% 10%;
+}
+.youtube h2, .youtube p{
+    color:#7c8994;
+}
+.youtube h2{
+    font-size: 350%;
+}
+.youtube p{
+    font-size: 100%;
+}
+
+.youtube a{
+    text-decoration: none;
+    color: blue;
+    font-size: 100%;
+    font-weight: 700;
+
+}
+
+ /* ---------------------------
+      talk business and form
+ ----------------------------- */
+
+.business, .form{
+    float: left;
+    width: 50%;
+    padding: 10% 0%;
+}
+.business h2{
+    font-size: 270%;
+}
+.business{
+    text-align: justify;
+    padding-left: 15%;
+}
+
+.form{
+    padding-left: 5%;
+}
+
+.form label{
+    font-size: 120%;
+}
+.form input{
+    width: 70%;
+    height: 40px;
+}
+
+.form button{
+    width: 70%;
+    font-size: 100%;
+    padding: 10px 0px;
+    background-color: blue;
+    color: #7c8994;
+    border: none;
+    cursor: pointer;
+    /* font-weight: 100; */
+}
+
+#Message{
+    height: 70px;
+}
+
+
+
+    /* ---------------------------
+                  footer
+    ----------------------------- */
+
+
+.icon, .tag, .right1{
+    width:33.30%;
+    float: left;
+}
+
+.icon{
+    padding: 6% 0% 6% 10%;
+    color:#7c8994;
+    /* border: 1px solid black; */
+}
+.icon img{
+    margin: 4px;
+}
+
+.tag a, .right1 a{
+    text-decoration: none;
+    color: #7c8994;
+    display: block;
+    margin: 20px;
+    /* padding:; */
+}
+.tag{
+    
+    /* border: 1px solid black; */
+    padding: 5% 0% 5% 25%;
+}
+
+.right1{
+    padding: 5% 1%;
+}
+
+[class|=gotop]{
+    background-color: none;
+    color: rgb(252, 248, 248);
+    text-align: center;
+    cursor: pointer;
+    display: block
+}
+.gotop p{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 800;
+    background-color: rgb(7, 7, 7);
+}
+
+.gotop p a{
+    text-decoration: none;
+    color: white
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------media queries--------  */
+
+@media only screen and (max-width: 700px){
+    .youtube h2{
+        font-size: 250%;
+}
+.youtube p{
+    font-size: 80%;
+}
+.icon img{
+    display: inline-block;
+    width: 15%;
+}
+.tag{
+    text-align: center;
+    /* border: 1px solid black; */
+    padding: 5% 0% 5% 0%;
+}
+
+.right1{
+    padding: 20px 60px;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 1200px){
+    .business h2{
+        font-size: 200%;
+    }
+    .business{
+        text-align: justify;
+        padding-left: 10%;
+    }
+    .abslt h2{
+        font-size: 200%;
+       
+    }
+
+}
+
+@media only screen and (max-width: 940px) {
+    .image img{
+        width: 35%;
+    }
+    .image {
+        margin-left: 25%;
+    }
+}
